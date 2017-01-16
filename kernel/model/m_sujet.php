@@ -1,4 +1,5 @@
 <?php
+	require_once(APP.'Model.php');
 	
 	class sujet extends model{
 		

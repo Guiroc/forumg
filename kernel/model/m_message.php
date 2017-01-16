@@ -1,4 +1,6 @@
 <?php
+	require_once(APP.'Model.php');
+
 	class message extends model{
 		
 		//variable
