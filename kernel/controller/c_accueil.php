@@ -41,7 +41,7 @@
 			echo $condition;
 			$bool = $nouveau->find($condition);
 			var_dump($bool);
-			if (!$bool[0][0] == null){
+			if ($bool != array(array(0=>null))){
 				$_SESSION['id'] = $bool[0]['utilisateur_id'];
 				$_SESSION['pseudo'] = $bool[0]['utilisateur_pseudo'];
 				$_SESSION['connect']= true;

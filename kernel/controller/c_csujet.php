@@ -12,7 +12,6 @@
 		}
 		
 		public function nouveau(){
-			
 			$this->render("nouveau_sujet");
 		}
 		public function ajout(){
