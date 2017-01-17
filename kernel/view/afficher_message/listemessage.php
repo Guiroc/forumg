@@ -21,13 +21,15 @@ echo'<head>
 				Pas de message<br>
 			</div>';
 			}
+			if (isset($_SESSION['connect']) and $_SESSION['connect']){
 		echo'<div>
 			<form action="'.WEBROOT.'/afficher_message/viewajout/'.$this->viewvar[1]['sujet_id'].'" method="post">
 			<textarea id="nouveau" name="nouveau"></textarea>
 			<input type="submit">
 			</form>
-		</div>
-		<div>
+		</div>';
+			}
+		echo'<div>
 				<form action="'.WEBROOT.'">
 					<input type="submit" value="retour">
 				</form>

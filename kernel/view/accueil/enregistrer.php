@@ -1,12 +1,12 @@
 <?php
-echo "<body>
+	echo "<body>
 <head>
 		<link rel='stylesheet' type='text/css' href='".CSS."connexion.css'>
 		<meta charset='utf-8'>
 		<title></title>
 	</head>
-	<div id='connexion'>
-		<form method='POST' action='".WEBROOT."/accueil/connexion'>
+	<div id='nouveau_utilisateur'>
+		<form method='POST' action='".WEBROOT."/accueil/nouveau_utilisateur'>
 			<label>
 				Pseudo :
 			</label>
@@ -17,9 +17,13 @@ echo "<body>
 			</label>
 			<input type='text' name='mdp'></input>
 			</br>
-			<input type='submit' name='co_deco' value='Connexion'></input>
+			<label>
+				E_mail :
+			</label>
+			<input type='text' name='e_mail'></input>
+			</br>
+			<input type='submit' name='nouveau' value='enregistrer'></input>
 		</form>
-		<a href='".WEBROOT."accueil/enregistrer'><input type='button' name='nouveau' value='nouveau'></input></a>
 	</div>
 	</body>";
 ?>

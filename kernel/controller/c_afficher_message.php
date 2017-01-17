@@ -1,5 +1,7 @@
 <?php
 	require_once(APP."Controller.php");
+	session_start();
+	
 	class afficher_message extends Controller{
 		
 		protected $models;
