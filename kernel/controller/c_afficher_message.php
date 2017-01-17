@@ -28,7 +28,13 @@
 		
 		public function viewajout($id){
 			print_r($_POST);
-			$nouveau = new message(null, null, $_POST['nouveau'], '2016-12-16', null, $id, 1);
+			if(isset($_POST['nouveau'])){
+				$nouveau = $_POST['nouveau'];
+			}
+			else{
+				$nouveau = $_GET['nouveau'];
+			}
+			$nouveau = new message(null, null, $nouveau, '2016-12-16', null, $id, $_SESSION['id']);
 			$bool = $nouveau->create();
 			$this->view($id,$bool);
 		}

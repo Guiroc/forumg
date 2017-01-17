@@ -19,7 +19,9 @@
 			$nouveau = new sujet(null,$_POST['titre'], null, $_SESSION['id']);
 			$bool = $nouveau->create();
 			echo $bool;
+			$_GET['nouveau'] = $_POST['nouveau'];
 			header('Location: '.WEBROOT.'');
+			
 		}
 	}
 ?>
