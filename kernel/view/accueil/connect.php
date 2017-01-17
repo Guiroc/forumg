@@ -6,13 +6,15 @@ echo "<body>
 		<title></title>
 	</head>
 	<div id='connexion'>
-		<form method='POST' action='".WEBROOT."/accueil/connexion'>
-			<label>
-				".$_SESSION['pseudo']."
-			</label>
-			</br>
-		</form>
-		<a href='".WEBROOT."accueil/deconnexion'><input type='button' name='Déconnexion' value='Déconnexion'></input></a>
+		<div id='panel'>
+			<form method='POST' action='".WEBROOT."/accueil/connexion'>
+				<label>
+					".$_SESSION['pseudo']."
+				</label>
+				</br>
+			</form>
+			<a href='".WEBROOT."accueil/deconnexion'><input type='button' name='Déconnexion' value='Déconnexion'></input></a>
+		</div>
 	</div>
 	</body>";
 ?>

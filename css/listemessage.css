@@ -1,29 +1,43 @@
 *{
 	padding:0;
 	margin:0;
+	text-decoration:none;
 }
 
 body{
-	width:calc(100vw - 40px);
+	width:calc(100vw - 52px);
 	margin:20px;
+	background-color: #262626;
 }
-#content1{
-	border:solid 2px;
+#liste_message{
 	text-align:center;
 	width:100%;
+	color: #C9C9C9;
 }
-.message{
-	border:solid 1px;
+#liste_message h1{
+	font-size:2em;
+	font-family:cursive;
+}
+#liste_message #retour{
+	color: #C9C9C9;
+	text-align:left;
+	margin-left:10px;
+	font-size:20px;
+}
+#liste_message .message{
 	margin:10px;
 	text-align:left;
 	padding:5px;
+	border-radius: 5px;
+	background-color: #454545;
+	color: #C9C9C9;
 }
-#nouveau{
+#liste_message #nouveau{
 	width:calc(100vw - 60px);
 	margin:10px;
 	min-height:200px;
 }
-#annonce{
+#liste_message #annonce{
 	height:50px;
 	
 }

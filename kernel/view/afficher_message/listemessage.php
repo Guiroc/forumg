@@ -4,12 +4,15 @@ echo'<head>
 		<meta charset="utf-8">
 		<title></title>
 	</head>
-	<div id="content1">';
+	<div id="liste_message">';
 	//var_dump($this->viewvar);
 			echo'<h1>'.$this->viewvar[1]['sujet_titre'].'</h1>
 			<div id="annonce">';
 			echo $this->viewvar[2];
-			echo'</div>';
+			echo'</div>
+			<a href="'.WEBROOT.'"><div id="retour">
+				<< Retour
+			</div></a>';
 			if ($this->viewvar[0]!= array(array(0=>null))){
 		foreach ($this->viewvar[0] as $message){
 			echo'<div class="message">'.
@@ -29,10 +32,5 @@ echo'<head>
 			</form>
 		</div>';
 			}
-		echo'<div>
-				<form action="'.WEBROOT.'">
-					<input type="submit" value="retour">
-				</form>
-		</div>
-	</div>';
+	echo'</div>';
 ?>
